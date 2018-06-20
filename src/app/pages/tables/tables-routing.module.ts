@@ -11,7 +11,7 @@ const routes: Routes = [{
   children: [{
     path: 'shows',
     component: ShowsComponent,
-  },{
+  }, {
     path: 'questions',
     component: QuestionsComponent,
   }],

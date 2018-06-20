@@ -37,7 +37,7 @@ export class ShowsComponent {
       // },
       name: {
         title: 'Name',
-        type: 'html'
+        type: 'html',
       },
       channel: {
         title: 'Channel',

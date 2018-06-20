@@ -45,17 +45,17 @@ export class SmartTableService {
     id : 'kbc01',
     name: '<a href="/#/pages/tables/questions">KBC</a>',
     channel: 'sony',
-    start_time: '8:00 pm'
+    start_time: '8:00 pm',
   }, {
     id : 'big01',
     name: 'Big Boss',
     channel: 'colors',
-    start_time: '8:00 pm'
+    start_time: '8:00 pm',
   }, {
     id : 'dus01',
     name: 'Dus Ka Dum',
     channel: 'sony',
-    start_time: '8:00 pm'
+    start_time: '8:00 pm',
   }];
 
   getData() {
