@@ -4,15 +4,15 @@ import { LocalDataSource } from 'ng2-smart-table';
 import { SmartTableService } from '../../../@core/data/smart-table.service';
 
 @Component({
-  selector: 'ngx-smart-table',
-  templateUrl: './smart-table.component.html',
+  selector: 'ngx-questions-table',
+  templateUrl: './questions.component.html',
   styles: [`
     nb-card {
       transform: translate3d(0, 0, 0);
     }
   `],
 })
-export class SmartTableComponent {
+export class QuestionsComponent {
 
   settings = {
     add: {
@@ -34,25 +34,13 @@ export class SmartTableComponent {
         title: 'ID',
         type: 'number',
       },
-      firstName: {
-        title: 'First Name',
-        type: 'string',
+      question: {
+        title: 'Question',
+        type: 'text',
       },
-      lastName: {
-        title: 'Last Name',
+      answer: {
+        title: 'Answer',
         type: 'string',
-      },
-      username: {
-        title: 'Username',
-        type: 'string',
-      },
-      email: {
-        title: 'E-mail',
-        type: 'string',
-      },
-      age: {
-        title: 'Age',
-        type: 'number',
       },
     },
   };
@@ -60,7 +48,7 @@ export class SmartTableComponent {
   source: LocalDataSource = new LocalDataSource();
 
   constructor(private service: SmartTableService) {
-    const data = this.service.getData();
+    const data = this.service.getQuestions();
     this.source.load(data);
   }
 
